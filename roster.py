@@ -12,7 +12,7 @@ data = pd.DataFrame(player)
 #BMI = weight in kg / height in meters
 data["BMI"] = (data["Weight"]/2.205)/ ((data["Height"]/39.37)**2)
 
-print(data)
+print(data.round(2))
 
 data.to_csv("bmi.csv")
 
